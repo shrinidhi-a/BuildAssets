@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.buildassets">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BuildAssets">
+        <activity
+            android:name=".forgotpassword"
+            android:exported="false" />
+        <activity
+            android:name=".registeruser"
+            android:exported="false" />
+        <activity
+            android:name=".enter"
+            android:exported="false" />
+        <activity
+            android:name=".aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".learn"
+            android:exported="false" />
+        <activity
+            android:name=".effectiveannualrate"
+            android:exported="false" />
+        <activity
+            android:name=".doublingfactor"
+            android:exported="false" />
+        <activity
+            android:name=".purchasingpower"
+            android:exported="false" />
+        <activity
+            android:name=".inflation"
+            android:exported="false" />
+        <activity
+            android:name=".finaltax"
+            android:exported="false" />
+        <activity
+            android:name=".recurringdeposite"
+            android:exported="false" />
+        <activity
+            android:name=".fixeddeposite"
+            android:exported="false" />
+        <activity
+            android:name=".sip"
+            android:exported="false" />
+        <activity
+            android:name=".onetime"
+            android:exported="false" />
+        <activity
+            android:name=".currencyconversion"
+            android:exported="false" />
+        <activity
+            android:name=".loanandemi"
+            android:exported="false" />
+        <activity
+            android:name=".fundreturns"
+            android:exported="false" />
+        <activity
+            android:name=".bank_returns"
+            android:exported="false" />
+        <activity
+            android:name=".basic"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

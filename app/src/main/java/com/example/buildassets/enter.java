@@ -8,10 +8,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class enter extends AppCompatActivity {
+    long backPressedTime;
+    Toast backToast;
     Button find1, find2, find3, find4, find5;
 
     @Override
@@ -82,5 +85,18 @@ public class enter extends AppCompatActivity {
             startActivity(intent8);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(backPressedTime + 2000 > System.currentTimeMillis()){
+            backToast.cancel();
+            finishAffinity();
+        }
+        else{
+            backToast = Toast.makeText(getBaseContext(),"Press again to exit", Toast.LENGTH_LONG);
+            backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
 }
